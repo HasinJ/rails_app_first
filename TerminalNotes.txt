@@ -1,0 +1,45 @@
+$cat
+	(peek)
+	| less (for large files, SPACE forward, B backwards, Q exit)
+$touch
+	(multiple files)
+
+$pwd
+	-P (symbolic links)
+
+$ls
+	-a (hidden files)
+	-l (list)
+	-lh (list with human-size)
+	-lhS (assort by human-size)
+	-lt (arranges by last modified time)
+	-r (reverses)
+$ln
+	(hard link to update files as source is changed, doesn't work for directories)
+	-f (if source file exists, -f forces the link)
+	-s (symbolic links) (from A to B, -> is backwards)
+
+$cd
+	(navigates to home directory)
+	.. (parent directory)
+$mkdir
+	(makes directory)
+	-p (nested directories)
+	-v (verbose output, prints the results)
+$cp
+	(first is the source, second is the destination/directory)
+	-v (first) (print verbose output)
+	-R (same thing but with directories)
+	-f (force/overwrite)
+	-i (to confirm overwriting)
+$rm
+	(remove files, follows same flags and args as $cp)
+$mv
+	(moving files follows $cp too)
+|
+	("pipe" operator)
+
+[tab]
+	(auto-complete)
+atom .
+	(open up project file in atom)
